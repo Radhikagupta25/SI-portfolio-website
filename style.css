@@ -140,6 +140,63 @@
 
     #skills {
         background-color: #F7B2B7;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: #16001E;
+        padding: 5vh 0;
+    }
+
+    #skills h1 {
+        font-size: 8vh;
+        margin-bottom: 3vh;
+    }
+
+    .skillset {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 3vw;
+        justify-content: center;
+        width: 80vw;
+    }
+
+    .skillset-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #16001E;
+        padding: 2vh 2vw;
+        flex: 1 1 20vw;
+        min-width: 150px;
+        max-width: 250px;
+        border-radius: 10px;
+        color: #F3A6AB;
+    }
+
+    .skillset-item h1 {
+        font-size: 2vh;
+        margin-top: 1vh;
+    }
+
+    .skillset-item h2 {
+        font-size: 2vh;
+        font-weight: normal;
+        margin-top: 0.5vh;
+        text-align: center;
+    }
+
+
+    .skillset-item i {
+        font-size: 8vh;
+        margin-bottom: 1vh;
+        color: #F3A6AB;
+    }
+
+    .skillset-item:hover {
+        border: 2px solid white;
+        cursor: pointer;
     }
 
     #about {}
@@ -199,18 +256,18 @@
             height: 10px;
         }
 
-        #home{
+        #home {
             flex-direction: column;
             position: relative;
             left: 4vw;
         }
 
-        #home img{
+        #home img {
             height: 40vh;
             width: auto;
         }
 
-        #home button{
+        #home button {
             height: 5vh;
             width: 17vw;
         }
