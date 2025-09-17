@@ -194,6 +194,7 @@
         margin-bottom: 1vh;
         color: #F3A6AB;
     }
+
     .skillset-item:hover {
         transform: translateY(-5px);
         box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
@@ -254,6 +255,15 @@
 
     #projects {
         background-color: #F7B2B7;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    #projects h1 {
+        font-size: 6vh;
+        margin-bottom: 4vh;
     }
 
     #contact {
@@ -403,7 +413,8 @@
         .social a {
             font-size: 5vh;
         }
-         #about h1 {
+
+        #about h1 {
             font-size: 5vh;
         }
 
@@ -412,7 +423,7 @@
             width: 50vw;
         }
 
-        .academic-card{
+        .academic-card {
             height: 10vh;
         }
 
