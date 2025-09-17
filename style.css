@@ -13,6 +13,7 @@
 
     body {
         background-color: #16001E;
+        min-height: 100%;
     }
 
     .nav {
@@ -193,13 +194,63 @@
         margin-bottom: 1vh;
         color: #F3A6AB;
     }
-
     .skillset-item:hover {
-        border: 2px solid white;
-        cursor: pointer;
+        transform: translateY(-5px);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
     }
 
-    #about {}
+    #about {
+        color: #F7B2B7;
+        background-color: #16001E;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 5vh 2vw;
+        text-align: center;
+    }
+
+    #about h1 {
+        font-size: 6vh;
+        margin-bottom: 4vh;
+    }
+
+    .academics {
+        display: flex;
+        gap: 4vw;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 80vw;
+        align-items: center;
+    }
+
+    .academic-card {
+        color: #16001E;
+        background-color: #F7B2B7;
+        padding: 3vh 2vw;
+        border-radius: 15px;
+        flex: 1 1 220px;
+        min-width: 200px;
+        max-width: 300px;
+        text-align: center;
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .academic-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+    }
+
+    .academic-card h2 {
+        font-size: 3vh;
+        margin-bottom: 1vh;
+    }
+
+    .academic-card p {
+        font-size: 2vh;
+        margin-bottom: 1vh;
+    }
 
     #projects {
         background-color: #F7B2B7;
@@ -271,6 +322,7 @@
         color: #F3A6AB;
     }
 
+
     @media (max-width: 1200px) {
         .nav {
             width: 5vw;
@@ -334,6 +386,42 @@
         #home button {
             height: 5vh;
             width: 17vw;
+        }
+
+        #contact h1 {
+            font-size: 5vh;
+        }
+
+        .contactForm {
+            width: 80vw;
+        }
+
+        .social {
+            gap: 6vw;
+        }
+
+        .social a {
+            font-size: 5vh;
+        }
+         #about h1 {
+            font-size: 5vh;
+        }
+
+        .academics {
+            gap: 3vh;
+            width: 50vw;
+        }
+
+        .academic-card{
+            height: 10vh;
+        }
+
+        .academic-card h2 {
+            font-size: 2.5vh;
+        }
+
+        .academic-card p {
+            font-size: 1.8vh;
         }
     }
 
