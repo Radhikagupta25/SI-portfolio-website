@@ -102,7 +102,7 @@
     }
 
     #home h1 {
-        width: 22ch;
+        width: 13ch;
         white-space: nowrap;
         overflow: hidden;
         border-right: 2px solid;
@@ -367,8 +367,8 @@
 
     @media (max-width: 700px) {
         .nav {
-            width: 10vw;
-            height: 30vh;
+            width: 5vw;
+            height: 25vh;
             position: fixed;
             top: 40vh;
         }
@@ -385,7 +385,19 @@
         #home {
             flex-direction: column;
             position: relative;
-            left: 4vw;
+            left: 5vw;
+        }
+
+        #home h1 {
+            font-size: 3vh;
+        }
+
+        #home h3 {
+            font-size: 2vh;
+        }
+
+        #home p {
+            font-size: small;
         }
 
         #home img {
@@ -396,22 +408,6 @@
         #home button {
             height: 5vh;
             width: 17vw;
-        }
-
-        #contact h1 {
-            font-size: 5vh;
-        }
-
-        .contactForm {
-            width: 80vw;
-        }
-
-        .social {
-            gap: 6vw;
-        }
-
-        .social a {
-            font-size: 5vh;
         }
 
         #about h1 {
@@ -434,6 +430,22 @@
         .academic-card p {
             font-size: 1.8vh;
         }
+
+        #contact h1 {
+            font-size: 6vh;
+        }
+
+        .contactForm {
+            width: 80vw;
+        }
+
+        .social {
+            gap: 6vw;
+        }
+
+        .social a {
+            font-size: 5vh;
+        }
     }
 
     @keyframes typing {
@@ -442,6 +454,6 @@
         }
 
         to {
-            width: 22ch;
+            width: 13ch;
         }
     }
